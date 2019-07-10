@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome(s) {
+        for (let i=0;i<s.length;i++){
+            let symmetricElement = s.length-i-1;
+            if (s.length >2){
+                if (s[i]===s[symmetricElement]){
+                    return true;
+                }else {
+                    return false
+                }
+            }else {
+                alert("Không đủ phần tử để kiểm tra!")
+            }break;
+        }
+    }
+    alert(isPalindrome(prompt("Nhập chuỗi mà bạn kiểm tra: ")));
+</script>
+</body>
+</html>
